@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EBIDANCE!</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 0;
+      }
+      .logo {
+        width: 100%;
+      }
+      .buttons {
+        width: 100%;
+      }
+      .ebi {
+        width: 15%;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 50%;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="./logo.png">
+    <p class="buttons">
+      <input class="ebi" type="image" src="./ebi.png" onclick="ebi1.play()">
+      <input class="ebi" type="image" src="./ebi.png" onclick="ebi2.play()">
+      <input class="ebi" type="image" src="./ebi.png" onclick="dance1.play()">
+      <input class="ebi" type="image" src="./ebi.png" onclick="ebidance.play()">
+      <input class="ebi" type="image" src="./ebi.png" onclick="dance2.play()">
+    </p>
+    <script>
+      const ebi1 = new Audio('./ebi1.mp3')
+      const ebi2 = new Audio('./ebi2.mp3')
+      const dance1 = new Audio('./dance1.mp3')
+      const dance2 = new Audio('./dance2.mp3')
+      const ebidance = new Audio('./ebidance.mp3')
+    </script>
+  </body>
+</html>
